@@ -19,7 +19,7 @@ public class file {
 		
 		for(int q=0;q<Main.toCrypt.length();q++) {
 			Ascii[q] = CharToASCII(Main.toCrypt.charAt(q));
-			Ascii[q] += 10;
+			Ascii[q] += 10 + q;
 			Chars[q] = ASCIIToChar(Ascii[q]);
 		}
 		
@@ -31,7 +31,7 @@ public class file {
 		
 		for(int q=0;q<Main.toCrypt.length();q++) {
 			Ascii[q] = CharToASCII(Main.toCrypt.charAt(q));
-			Ascii[q] -= 10;
+			Ascii[q] -= 10 + q;
 			Chars[q] = ASCIIToChar(Ascii[q]);
 		}
 		String s = new String(Chars);
